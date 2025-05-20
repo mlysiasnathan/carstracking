@@ -6,10 +6,11 @@ A Flutter-based mobile application for tracking and managing vehicles on a map i
 
 - Real-time vehicle tracking on map
 - Detailed car information display
-- User authentication system
 - Dark/Light theme support
 - Multi-language support (English and French)
 - Responsive design for various screen sizes
+- Location-based services
+- Material Design implementation
 
 ## 📋 Prerequisites
 
@@ -54,7 +55,7 @@ lib/
 
 ### Key Components
 
-- **models/**: Contains data models for cars and users
+- **models/**: Contains data models for cars
 - **providers/**: State management using Provider pattern
 - **screens/**: Main application screens
   - `home_screen.dart`: Main dashboard
@@ -78,9 +79,9 @@ flutter doctor
 
 ### API Configuration
 
-The application uses various APIs for map integration and vehicle tracking. Make sure to:
-1. Set up your API keys in the appropriate configuration files
-2. Configure the backend services if needed
+The application uses Google Maps API for map integration. Make sure to:
+1. Set up your Google Maps API key in `android/app/src/main/AndroidManifest.xml`
+2. Enable necessary Google Maps services in your Google Cloud Console
 
 ## 🚀 Running the Application
 
@@ -107,12 +108,13 @@ flutter run
 - Dark/Light theme support
 - Custom animations and transitions
 - Intuitive navigation
+- Location-based services
 
 ## 🔐 Security
 
-- Secure authentication system
-- Data encryption for sensitive information
 - Secure API communication
+- Location permission handling
+- Data validation and sanitization
 
 ## 📈 Performance
 
@@ -120,6 +122,7 @@ flutter run
 - Efficient state management
 - Minimal memory footprint
 - Fast loading times
+- Location updates optimization
 
 ## 🤝 Contributing
 
@@ -140,6 +143,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙏 Acknowledgments
 
 - Flutter team for the amazing framework
+- Google Maps team for the mapping services
 - All contributors who have helped shape this project
 - The open-source community for their invaluable resources
 
