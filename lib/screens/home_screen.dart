@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import '../models/car.dart';
 import '../providers/car_provider.dart';
 import './car_detail_screen.dart';
-import 'splash_screen.dart';
+import './splash_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -175,8 +175,6 @@ class _HomeScreenState extends State<HomeScreen> {
                               tabs: tabs,
                             ),
                           ),
-
-                          //
                         ],
                       ),
                     ),
@@ -192,12 +190,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Set<Marker> _buildMarkers(List<Car> cars) {
     return cars.map((car) {
+      // Create a BitmapDescriptor for the car icon based on status
+      final BitmapDescriptor carIcon = BitmapDescriptor.defaultMarkerWithHue(
+        car.status == 'Moving' ? BitmapDescriptor.hueGreen : BitmapDescriptor.hueRed,
+      );
+
       return Marker(
         markerId: MarkerId(car.id.toString()),
         position: LatLng(car.latitude, car.longitude),
+        icon: carIcon,
         infoWindow: InfoWindow(
           title: car.name,
-          snippet: 'Speed: ${car.speed} km/h',
+          snippet: 'Status: ${car.status}\nSpeed: ${car.speed} km/h',
           onTap: () {
             Navigator.push(
               context,
