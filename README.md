@@ -2,6 +2,17 @@
 
 A Flutter-based mobile application for tracking and managing vehicles on a map interface. This application provides real-time vehicle tracking, detailed car information, and an intuitive user interface.
 
+## 📱 Screenshots
+
+<div align="center">
+  <img src="docs/images/screenshot1.png" alt="Home Screen" width="200"/>
+  <img src="docs/images/screenshot2.png" alt="Tracking Screen" width="200"/>
+  <img src="docs/images/screenshot3.png" alt="Car Details" width="200"/>
+  <img src="docs/images/screenshot4.png" alt="Dark Mode" width="200"/>
+  <img src="docs/images/screenshot5.png" alt="Car Details" width="200"/>
+  <img src="docs/images/screenshot6.png" alt="Dark Mode" width="200"/>
+</div>
+
 ## 🚀 Features
 
 - Real-time vehicle tracking on map
@@ -77,12 +88,6 @@ flutter doctor
 - For Android: Set up Android Studio and Android SDK
 - For iOS: Install Xcode (macOS only)
 
-### API Configuration
-
-The application uses Google Maps API for map integration. Make sure to:
-1. Set up your Google Maps API key in `android/app/src/main/AndroidManifest.xml`
-2. Enable necessary Google Maps services in your Google Cloud Console
-
 ## 🚀 Running the Application
 
 1. Select your target device:
@@ -109,6 +114,7 @@ flutter run
 - Custom animations and transitions
 - Intuitive navigation
 - Location-based services
+- 🚀 Install the app in real device to ensure fluent animation as well
 
 ## 🔐 Security
 
