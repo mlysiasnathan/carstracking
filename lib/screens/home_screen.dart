@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 
 import '../models/car.dart';
 import '../providers/car_provider.dart';
-import '../routes/splash_screen.dart';
 import './car_detail_screen.dart';
+import 'splash_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

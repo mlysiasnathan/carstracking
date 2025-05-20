@@ -1,31 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-const IS_PRODUCTION = false;
-const baseURLFile =
-    IS_PRODUCTION ? 'https://api.nyuki-tech.com/' : 'http://10.0.2.2:3002/';
-var baseURL = IS_PRODUCTION
-    ? 'https://api.nyuki-tech.com/api' //online api
-    : 'http://10.0.2.2:3002/api'; //local api for AVD
-// var baseURL = 'http://192.168.135.130:3002/api'; //local api REEL DEVICE
-
-var loginURL = '$baseURL/user/login';
-var registerURL = '$baseURL/user/create';
-var forgotPasswordURL = '$baseURL/user/recover-password';
-var verifyOtpURL = '$baseURL/user/verify';
-var logoutURL = '$baseURL/user/logout';
-var userURL = '$baseURL/user/profil';
-var categoriesURL = '$baseURL/user/conseil-category';
-var addCategoryURL = '$baseURL/category/create';
-
-const String serverError = 'Server error or bad network';
-const String unauthorized = 'Unauthorized! Please login first';
-const String somethingWentWrong = 'Something went wrong, Try again';
-
-const atlasUrl = 'https://payitcongo.com/map/';
-const nrepUrl = 'https://fumba-hub-main-jybh3i.laravel.cloud/';
-
-const String appName = 'NREP';
+const String appName = 'Cars Tracking';
 
 const List<String> assetImages = [
   'assets/images/logo_mini.png',
@@ -118,13 +94,6 @@ const List<String> productImage = [
   'assets/images/dev/products/5.jpg',
   'assets/images/dev/products/6.jpg',
   'assets/images/dev/products/7.jpg',
-];
-const List<String> rolesList = [
-  'Client',
-  'Fournisseur',
-  'Transporteur',
-  'Admin',
-  'Super Admin',
 ];
 
 String timeAgoFormatting({required DateTime time, String lang = 'en'}) {
